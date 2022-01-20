@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+
+:root{
+    --cor0:#0A425C;
+    --cor1:#5CB7E1;
+    --cor2:#199CDB;
+    --cor3:#264B5C;
+    --cor4:#1379A8;
+    --cor5:#06105C;
+    --cor6:#85ABDF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
+    min-height: 130px;
+    text-align: center;  
+}
+
+header h1 {
+    color: white;
+    text-shadow: 1px 1px 6px rgba(14, 13, 13, 0.623);
+    font-size: 50pt;
+    font-family: 'Pacifico', cursive, sans-serif;
+    font-weight: normal;
+}
+
+nav  {
+    background-color: var(--cor5);
+    padding: 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205); 
+     
+   
+}
+
+nav a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    transition-duration: .5s;
+    min-width: auto;
+}
+
+nav a:hover {
+    background-color:var(--cor3);
+    color: white;
+}
+
+
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    padding-bottom: 10px;
+    
+}
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+}
+
+footer p {
+    color: white;
+   margin-bottom: 2px;
+   padding-bottom: 1px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+p {
+    margin: 35px;            /*Comentario em css*/
+    color: rgb(22, 30, 100);
+    padding: 10px;
+    font-size: 18pt;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

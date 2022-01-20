@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+
+:root{
+    --cor0:#0A425C;
+    --cor1:#5CB7E1;
+    --cor2:#199CDB;
+    --cor3:#264B5C;
+    --cor4:#1379A8;
+    --cor5:#06105C;
+    --cor6:#85ABDF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    /** {
+        height: 100%;
+    }*/
+
+   body {
+       
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 18pt; 
+           
+            
+   }
+
+   #saudacao {
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       color: var(--cor3);
+   }
+
+  
+
+header {
+       background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
+       min-height: 130px;
+       text-align: center;  
+}
+
+header h1 {
+    color: white;
+    text-shadow: 1px 1px 6px rgba(14, 13, 13, 0.623);
+    font-size: 50pt;
+    font-family: 'Pacifico', cursive, sans-serif;
+    font-weight: normal;
+}
+
+nav  {
+    background-color: var(--cor5);
+    padding: 20px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205); 
+     
+   
+}
+
+nav a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: normal;
+    transition-duration: .5s;
+    min-width: auto;
+}
+
+nav a:hover {
+    background-color:var(--cor3);
+    color: white;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#container-b {
+    width: 400px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.301);
+    border-bottom-left-radius: 13px;
+    border-top-right-radius: 13px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    
+}
+#container-a {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 290px;
+    height: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    display:inline-block;
+}
+section {
+    background-color: var(--cor1);
+    padding: 5px;
+    border-bottom: 5px;
+    margin-top: 10px;
+   
+}
+
+.visitante {
+    width: 100px;
+    height: 50px;
+    background-color: var(--cor2);
+    float: right;
+    margin-top: 20px;
+}
+
+p {
+       margin: 35px;            /*Comentario em css*/
+       color: rgb(22, 30, 100);
+       padding: 10px;
+       font-size: 18pt;
+       font-style: italic;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#especial {
+       color: rgb(230, 198, 159);
+       list-style: none;
+       padding: 10px;
+
+}
+
+h2 {
+       color: rgba(12, 12, 12, 0.568);
+       align-items: center;
+       margin-top: 10px;
+       margin-bottom: 3px;
+       margin-left: 20px;
+       font-family: unset;
+}
+  
+h3 {
+       text-shadow: 1px 0px 6px rgba(14, 13, 13, 0.616);
+       margin-left: -19px;
+       padding-left: 10px;
+       margin-top: 3px;
+       font-family: 'Pacifico', cursive, sans-serif;
+       color:rgba(218, 211, 211, 0.973) ;
+       background-image: linear-gradient(to right, var(--cor4),transparent);
+       font-size: 30pt;
+       font-weight: normal;
+}
+   
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: .8em;
+    padding-bottom: 5px;
+    
+}
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+    margin-top: 5px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+}
+
+footer p {
+    color: white;
+   margin-bottom: 2px;
+   padding-bottom: 1px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+ 
+#saudacao {
+    margin-left: 20px;
+    
+}
+h1#saudacao {
+    font-size: 25px;
+    color: var(--cor5);
+}
+
+.bt{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 17px;
+    border: none;
+    border-bottom:3px solid #06105C;
+    border-right: 1px solid #06105C;
+    background-color:transparent;
+    font-family: inherit;
+    margin-left: 20px;
+    width: 200px;
+    height: 30px;
+    margin-top: 2px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+#bto {
+    width: 60px;
+    height: 30px;
+    color: #06105C;
+}
+
+.p{
+    color: var(--cor3);
+    font-family: inherit;
+    margin-bottom: 1px;
+    margin-top: 3px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+}
+.p1{
+    margin-top: 1px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-family: initial;
+    font-size: 50px;
+    color: var(--cor5);
+    padding-top: 20px;
+}
+
+
+
