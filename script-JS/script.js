@@ -7,7 +7,7 @@ function verificar() {
     var n = pess.value
     
     var data = new Date();
-    var hora = data;
+    var hora = data.getHours();
 
     res.innerHTML = `<p class="p">Olá <strong>${n}</strong> É um prazer ter você aqui!</p>`
     

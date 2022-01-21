@@ -13,9 +13,12 @@
     --cor6:#85ABDF;
 }
 
+
+
 *{
     margin: 0;
     padding: 0;
+ 
 }
 
     /** {
@@ -26,21 +29,20 @@
        
        font-family: Arial, Helvetica, sans-serif;
        font-size: 18pt; 
-           
-            
+       margin: auto;   
    }
 
    #saudacao {
        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
        color: var(--cor3);
+       
    }
-
-  
 
 header {
        background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
        min-height: 130px;
-       text-align: center;  
+       text-align: center; 
+       width: 100%; 
 }
 
 header h1 {
@@ -53,10 +55,10 @@ header h1 {
 
 nav  {
     background-color: var(--cor5);
-    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205); 
-     
-   
+    width: 100%;  
 }
 
 nav a {
@@ -66,7 +68,7 @@ nav a {
     text-decoration: none;
     font-weight: normal;
     transition-duration: .5s;
-    min-width: auto;
+    min-width: 100%;
 }
 
 nav a:hover {
@@ -80,14 +82,15 @@ main {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
 #container-b {
-    width: 400px;
+    width: 100%;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.301);
     border-bottom-left-radius: 13px;
     border-top-right-radius: 13px;
@@ -104,22 +107,17 @@ main {
     height: auto;
     min-width: 300px;
     max-width: 1000px;
-    display:inline-block;
+
 }
 section {
     background-color: var(--cor1);
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border-bottom: 5px;
     margin-top: 10px;
-   
-}
-
-.visitante {
-    width: 100px;
-    height: 50px;
-    background-color: var(--cor2);
-    float: right;
-    margin-top: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    
 }
 
 p {
@@ -145,6 +143,7 @@ h2 {
        margin-bottom: 3px;
        margin-left: 20px;
        font-family: unset;
+       margin-left: 20px;
 }
   
 h3 {
@@ -157,21 +156,22 @@ h3 {
        background-image: linear-gradient(to right, var(--cor4),transparent);
        font-size: 30pt;
        font-weight: normal;
+       padding-left: 30px;
 }
    
 footer {
     background-color: var(--cor5);
     color: white;
     text-align: center;
-    font-size: .8em;
+    font-size: .7em;
     padding-bottom: 5px;
-    
+    width: 100%;
 }
 footer a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: .9em;
     
     margin-top: 5px;
     margin-bottom: 2px;
@@ -202,7 +202,8 @@ h1#saudacao {
 .bt{
     border-top-left-radius: 10px;
     border-bottom-right-radius: 17px;
-    border: none;
+    border: 0;
+    outline: none;
     border-bottom:3px solid #06105C;
     border-right: 1px solid #06105C;
     background-color:transparent;
@@ -210,15 +211,22 @@ h1#saudacao {
     margin-left: 20px;
     width: 200px;
     height: 30px;
-    margin-top: 2px;
+    margin-top: 10px;
     padding-left: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 #bto {
+    background-color: #1379A8;
     width: 60px;
     height: 30px;
     color: #06105C;
+    border: none;
+    border-radius: 10px;
+}
+#bto:hover {
+    background-color: #264B5C;
+    color: white;
 }
 
 .p{
