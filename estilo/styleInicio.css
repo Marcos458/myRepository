@@ -78,8 +78,8 @@ nav a:hover {
 
 main {
     background-color: white;
-    min-width: 300px;
-    max-width: 1000px;
+    min-width: 280px;
+    max-width: 960px;
     margin: auto;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -90,11 +90,10 @@ main {
 }
 
 #container-b {
-    width: 100%;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.301);
     border-bottom-left-radius: 13px;
     border-top-right-radius: 13px;
-    min-width: 300px;
+    min-width: 280px;
     max-width: 1000px;
     background-color: white;
     
@@ -112,16 +111,15 @@ main {
 section {
     background-color: var(--cor1);
     padding-top: 5px;
-    padding-bottom: 5px;
-    border-bottom: 5px;
+    padding: 15px;
     margin-top: 10px;
-    min-width: 300px;
+    min-width: 270px;
     max-width: 1000px;
     
 }
 
 p {
-       margin: 35px;            /*Comentario em css*/
+                   /*Comentario em css*/
        color: rgb(22, 30, 100);
        padding: 10px;
        font-size: 18pt;
