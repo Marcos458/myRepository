@@ -17,12 +17,14 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 header {
     background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
     min-height: 130px;
-    text-align: center;  
+    text-align: center; 
+    width: 100vw; 
 }
 
 header h1 {
@@ -35,10 +37,10 @@ header h1 {
 
 nav  {
     background-color: var(--cor5);
-    padding: 20px;
+    padding: 20px 0px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205); 
-     
-   
+    width: 100vw; 
+    
 }
 
 nav a {
@@ -48,8 +50,14 @@ nav a {
     text-decoration: none;
     font-weight: normal;
     transition-duration: .5s;
-    min-width: auto;
+    font-weight: normal;
 }
+ul li {
+    display: inline;
+    font-size:1.3em;
+    width: 100VW;
+}
+
 
 nav a:hover {
     background-color:var(--cor3);
@@ -64,34 +72,57 @@ footer {
     text-align: center;
     font-size: .8em;
     padding-bottom: 10px;
-    
+    width: 100vw;
 }
 footer a {
     color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2em;
-    
+    width: 100vw;
     margin-top: 5px;
     margin-bottom: 2px;
     padding-bottom: 5px;
 }
+#especial {
+    display: inline;
+    margin: 0px 10px;
+}
 
 footer p {
     color: white;
-   margin-bottom: 2px;
-   padding-bottom: 1px;
+   
 }
 
 footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
 }
-p {
-    margin: 35px;            /*Comentario em css*/
+p {            /*Comentario em css*/
     color: rgb(22, 30, 100);
-    padding: 10px;
+    padding: 10px 0px;
     font-size: 18pt;
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.unid {
+
+    width: 400px;
+    height: 200px;
+    background-color: rgba(238, 224, 98, 0.897);
+    margin: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    
+}
+#prod {
+    align-items: center;
+    background-color: rgb(245, 149, 24);
+    width: 100vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }

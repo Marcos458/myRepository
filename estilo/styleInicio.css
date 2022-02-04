@@ -59,6 +59,13 @@ nav  {
     padding-bottom: 15px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205); 
     width: 100%;  
+    
+}
+input[type="checkbox"] {
+    display: none;
+}
+label{
+    display: none;
 }
 
 nav a {
@@ -87,6 +94,15 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    height: 100vh;
+    
+}
+#dataHora {
+    height: 50px;
+    width: 150px;
+     background-color: red;
+     
+     
 }
 
 #container-b {
@@ -96,7 +112,9 @@ main {
     min-width: 280px;
     max-width: 1000px;
     background-color: white;
+   
 }
+
 #container-a {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
     border-top-left-radius: 15px;
@@ -105,7 +123,7 @@ main {
     height: auto;
     min-width: 300px;
     max-width: 1000px;
-    margin-left: 20px;
+    
 }
 section {
     background-color: var(--cor1);
@@ -116,6 +134,7 @@ section {
     max-width: 1000px;
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 p {
@@ -169,8 +188,7 @@ footer a {
     color: white;
     font-weight: bold;
     text-decoration: none;
-    font-size: .9em;
-    
+    font-size: .9em; 
     margin-top: 5px;
     margin-bottom: 2px;
     padding-bottom: 5px;
@@ -244,6 +262,39 @@ h1#saudacao {
     color: var(--cor5);
     padding-top: 5px;
 }
+@media screen and (max-width: 350px) {
+    nav {
+       background-color: blue;
+       width: 200px;
+       height: 100%;
+       display: block;
+       
+    }
+    
+    a {
+        display: block;
+        padding: 25px 5px;
+        color:white;
+    }
+    img {
+        width: 40px;
+        
+    }
+    ul {
+        background-color:transparent;
+        top: 70px;
+        position: absolute;
+        width: 100%;
+    }
+    label{
+        background-color: red;
+        padding: 15px;
+        position: absolute;
+    }
+}
+
+
+
 
 
 
