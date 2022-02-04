@@ -1,16 +1,16 @@
 
 
 function verificar() {
-    
-    var pess = window.document.querySelector('input#nome')
+
+    var pess = window.document.querySelector('#nome')
     var res = window.document.getElementById('res')
     var n = pess.value
-    
+
     var data = new Date();
     var hora = data.getHours();
 
     res.innerHTML = `<p class="p">Olá <strong>${n}</strong> É um prazer ter você aqui!</p>`
-    
+
 
     if (hora >= 5 && hora < 12) {
         res.innerHTML += `<p class="p1"><strong>Bom dia!</strong</p>`
@@ -25,6 +25,19 @@ function verificar() {
     } else if (hora < 5) {
         res.innerHTML += `<p class="p1"><strong>Boa Madrugada!</strong></p>`
     }
+    
     pess.value = ''
     pess.focus()
-}  
+    
+}
+
+
+document.addEventListener("keypress", function (e) {
+    if (e.key === 'Enter') {
+
+        var btn = document.querySelector("#bto");
+
+        btn.click();
+
+    }
+});

@@ -95,24 +95,32 @@ main {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 100vh;
+   
     
 }
 #dataHora {
     height: 50px;
     width: 150px;
-     background-color: red;
-     
-     
+    border: rgb(179, 9, 108) 1px solid;
+    margin: 25px auto 25px;
+    
+    
 }
 
 #container-b {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.301);
     border-bottom-left-radius: 13px;
     border-top-right-radius: 13px;
-    min-width: 280px;
+    min-width: 300px;
     max-width: 1000px;
     background-color: white;
+    height: auto;
    
+}
+ ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 8px 0px 8px 15px;
 }
 
 #container-a {
@@ -123,6 +131,7 @@ main {
     height: auto;
     min-width: 300px;
     max-width: 1000px;
+    margin-left: 30px;
     
 }
 section {

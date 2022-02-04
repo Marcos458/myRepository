@@ -19,6 +19,10 @@
     padding: 0;
     text-decoration: none;
 }
+body {
+    
+    margin: auto;
+}
 
 header {
     background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
@@ -55,7 +59,7 @@ nav a {
 ul li {
     display: inline;
     font-size:1.3em;
-    width: 100VW;
+    
 }
 
 
@@ -107,9 +111,11 @@ p {            /*Comentario em css*/
 }
 
 
-.unid {
 
-    width: 400px;
+
+.unid {
+    
+    width: 300px;
     height: 200px;
     background-color: rgba(238, 224, 98, 0.897);
     margin: 10px;
@@ -122,7 +128,7 @@ p {            /*Comentario em css*/
     background-color: rgb(245, 149, 24);
     width: 100vw;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
+    min-width: 280px;
+    max-width: 1000px;
 }
