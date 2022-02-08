@@ -94,18 +94,9 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    height: 100vh;
-   
-    
+    clear: both;
 }
-#dataHora {
-    height: 50px;
-    width: 150px;
-    border: rgb(179, 9, 108) 1px solid;
-    margin: 25px auto 25px;
-    
-    
-}
+
 
 #container-b {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.301);
@@ -114,13 +105,14 @@ main {
     min-width: 300px;
     max-width: 1000px;
     background-color: white;
-    height: auto;
+    height: auto; 
    
 }
  ul li {
     list-style: none;
     text-decoration: none;
     margin: 8px 0px 8px 15px;
+    position:relative;
 }
 
 #container-a {
@@ -132,7 +124,26 @@ main {
     min-width: 300px;
     max-width: 1000px;
     margin-left: 30px;
+    float: left;
+    clear: both;
+}
+#img {
+    margin:25px 35px;    
+    float: right;
+    position:relative; 
     
+}
+img{
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+}
+#dataHora {
+    height: 50px;
+    width: 150px;
+    border: rgb(179, 9, 108) 1px solid;
+    float: left;
+    margin: 35px;
 }
 section {
     background-color: var(--cor1);
@@ -141,8 +152,7 @@ section {
     margin-top: 10px;
     min-width: 270px;
     max-width: 1000px;
-    margin-left: 20px;
-    margin-right: 20px;
+    clear: both;
     
 }
 
@@ -271,36 +281,9 @@ h1#saudacao {
     color: var(--cor5);
     padding-top: 5px;
 }
-@media screen and (max-width: 350px) {
-    nav {
-       background-color: blue;
-       width: 200px;
-       height: 100%;
-       display: block;
-       
-    }
-    
-    a {
-        display: block;
-        padding: 25px 5px;
-        color:white;
-    }
-    img {
-        width: 40px;
-        
-    }
-    ul {
-        background-color:transparent;
-        top: 70px;
-        position: absolute;
-        width: 100%;
-    }
-    label{
-        background-color: red;
-        padding: 15px;
-        position: absolute;
-    }
-}
+
+
+
 
 
 

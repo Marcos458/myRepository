@@ -30,14 +30,3 @@ function verificar() {
     pess.focus()
     
 }
-
-
-document.addEventListener("keypress", function (e) {
-    if (e.key === 'Enter') {
-
-        var btn = document.querySelector("#bto");
-
-        btn.click();
-
-    }
-});
