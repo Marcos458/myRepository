@@ -11,6 +11,8 @@
     --cor4:#1379A8;
     --cor5:#06105C;
     --cor6:#85ABDF;
+
+    --font1:'Pacifico', cursive, sans-serif;
 }
 
 
@@ -61,12 +63,7 @@ nav  {
     width: 100%;  
     
 }
-input[type="checkbox"] {
-    display: none;
-}
-label{
-    display: none;
-}
+
 
 nav a {
     color: var(--cor1);
@@ -85,7 +82,7 @@ nav a:hover {
 
 main {
     background-color: white;
-    min-width: 280px;
+    min-width: 320px;
     max-width: 960px;
     margin: auto;
     margin-bottom: 30px;
@@ -94,7 +91,7 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    clear: both;
+    position:relative;
 }
 
 
@@ -102,7 +99,7 @@ main {
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.301);
     border-bottom-left-radius: 13px;
     border-top-right-radius: 13px;
-    min-width: 300px;
+    min-width: 320px;
     max-width: 1000px;
     background-color: white;
     height: auto; 
@@ -112,7 +109,7 @@ main {
     list-style: none;
     text-decoration: none;
     margin: 8px 0px 8px 15px;
-    position:relative;
+    
 }
 
 #container-a {
@@ -123,27 +120,32 @@ main {
     height: auto;
     min-width: 300px;
     max-width: 1000px;
-    margin-left: 30px;
-    float: left;
-    clear: both;
-}
-#img {
-    margin:25px 35px;    
-    float: right;
-    position:relative; 
+    display: inline-block;
     
 }
+#img {
+    float: left;
+    position: relative;
+    width: 280px;
+    margin: 20px 10px;
+}
 img{
+    position: relative;
+    width: 280px;
+    background-color: red;
     border-bottom-left-radius: 15px;
     border-top-right-radius: 15px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+    float:left;
+    
 }
 #dataHora {
-    height: 50px;
-    width: 150px;
-    border: rgb(179, 9, 108) 1px solid;
+    
+    width: 280px;
     float: left;
-    margin: 35px;
+    margin: 15px;
+    font-family: var(--font1);
+    
 }
 section {
     background-color: var(--cor1);
@@ -270,7 +272,7 @@ h1#saudacao {
     margin-bottom: 1px;
     margin-top: 3px;
     margin-left: 15px;
-    padding-bottom: px;
+    
 }
 .p1{
     margin-top: 1px;

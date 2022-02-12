@@ -1,4 +1,4 @@
-
+ 
 
 function verificar() {
 
@@ -30,3 +30,8 @@ function verificar() {
     pess.focus()
     
 }
+
+const bt = document.querySelector('#bto')
+    bt.addEventListener('submit');
+
+
