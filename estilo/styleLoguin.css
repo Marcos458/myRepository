@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 :root{
@@ -12,6 +12,9 @@
     --cor4:#1379A8;
     --cor5:#06105C;
     --cor6:#85ABDF;
+
+    --font2: 'Redressed', cursive;
+    --font3: 'Bebas Neue', cursive;
 }
 
 *{
@@ -43,7 +46,7 @@ header h1 {
  color: white;
  text-shadow: 1px 1px 6px rgba(14, 13, 13, 0.623);
  font-size: 50pt;
- font-family: 'Pacifico', cursive, sans-serif;
+ font-family: var(--font2);
  font-weight: normal;
 }
 
@@ -56,6 +59,7 @@ nav  {
 }
 
 nav a  {
+    font-family: var(--font2);
  color: var(--cor1);
  padding: 10px;
  border-radius: 5px;
@@ -161,18 +165,52 @@ input:hover{
     cursor: pointer;
 }
 
-footer {
-    background-color: var(--cor5);
-    color: white;
-    text-align: center;
-    font-size: .6em;
-    padding-top: 10px;
-    width: 100vw;   
+
+
+form {
+    animation-name: fade;
+    animation-duration: 3s;
+    
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-footer p {
-    color: white;
-   padding-bottom: 10px;
+
+form {
+    animation-name: move;
+    animation-duration: 500ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards;
+}
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
+.form-hide {
+    animation: dow 500ms forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes dow {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
 

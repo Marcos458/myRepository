@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 :root{
@@ -12,16 +14,18 @@
     --cor4:#1379A8;
     --cor5:#06105C;
     --cor6:#85ABDF;
+
+    --font2: 'Redressed', cursive;
+    --font3: 'Bebas Neue', cursive;
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    
 }
 body {
-    
-    margin: 0;
+    width: 100vw;
 }
 
 header {
@@ -29,13 +33,14 @@ header {
     min-height: 130px;
     text-align: center; 
     width: 100vw; 
+  
 }
 
 header h1 {
     color: white;
     text-shadow: 1px 1px 6px rgba(14, 13, 13, 0.623);
     font-size: 50pt;
-    font-family: 'Pacifico', cursive, sans-serif;
+    font-family: var(--font2);
     font-weight: normal;
 }
 
@@ -45,6 +50,7 @@ nav  {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205); 
     width: 100vw; 
     position: relative;
+   
 }
 
 nav a {
@@ -52,82 +58,35 @@ nav a {
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
+    font-family: var(--font2);
     font-weight: normal;
     transition-duration: .5s;
     font-weight: normal;
-    display: flexbox;
+    
 }
 ul li {
-    
+    width: 100vw;
     display: inline;
-    font-size:1.3em;
+    font-size:1.7em;
     
 }
 nav a:hover {
     background-color:var(--cor3);
     color: white;
 }
-main {
-    position: relative;
-    width: 100vw;
-    
-}
 
 
-footer {
+
+.footer {
     background-color: var(--cor5);
     color: white;
     text-align: center;
-    font-size: .8em;
-    padding-bottom: 10px;
-    width: 100vw;
-}
-footer a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
     font-size: 1.2em;
-    width: 100vw;
-    margin-top: 5px;
-    margin-bottom: 2px;
-    padding-bottom: 5px;
-}
-#especial {
-    display: inline;
-    margin: 0px 10px;
-}
-
-footer p {
-    color: white;
-   
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: var(--cor1);
-}
-p {            /*Comentario em css*/
-    color: rgb(22, 30, 100);
     padding: 10px 0px;
-    font-size: 18pt;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100vw;
 }
 
 
-
-
-.unid {
-    
-    width: 300px;
-    height: 200px;
-    background-color: rgba(238, 224, 98, 0.897);
-    margin: 10px;
-    display: inline-block;
-    border-radius: 15px;
-    position:relative;
-    
-}
 .btn {
     background-color: rgba(11, 190, 11, 0.747);
     color: white;
@@ -136,7 +95,7 @@ p {            /*Comentario em css*/
     border-radius: 3px;
     font-weight: bold;
     position: absolute;
-    top: 160px;
+    bottom: 5px;
     text-align: center;
     transform: translate(-50%);
 
@@ -146,18 +105,40 @@ p {            /*Comentario em css*/
     color: var(--cor5);
     background-color:var(--cor1);
 }
-h2 {
-  position: absolute;
-  top: 130px; 
-  left: 50%;
-  transform: translate(-50%);  
-}
+
 #prod {
-    margin: 0px;
-    align-items: center;
-    background-color: rgb(245, 149, 24);
-    justify-content: center;
+    position: relative;   
+    display: inline-block;   
     text-align: center;
     min-width: 320px;
-    max-width: 1380px;
+    max-width: 1300px;
+    width: 100vw;
+}
+.unid {
+    padding: 10px 0px;
+    width: 300px;
+    height: 285px;
+    box-shadow: 1px 1px 2px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    position:relative;
+    
+}
+.img-1{
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.form-1 h2 {
+    position: absolute;
+    text-align: center;
+        position:absolute;
+        bottom: 30px; 
+        left: 50%;
+        transform: translate(-50%);  
+      
 }
