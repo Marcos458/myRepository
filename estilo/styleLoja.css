@@ -22,11 +22,9 @@
 *{
     margin: 0;
     padding: 0;
-    
+
 }
-body {
-    width: 100vw;
-}
+
 
 header {
     background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
@@ -107,6 +105,7 @@ nav a:hover {
 }
 
 #prod {
+    padding-top: 50px;
     position: relative;   
     display: inline-block;   
     text-align: center;
@@ -115,6 +114,7 @@ nav a:hover {
     width: 100vw;
 }
 .unid {
+    background-color: rgb(214, 214, 135);
     padding: 10px 0px;
     width: 300px;
     height: 285px;
